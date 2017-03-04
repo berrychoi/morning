@@ -1,0 +1,1449 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto");
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 9, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 31, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 35, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+body {
+  line-height: 1;
+  color: #3a3a3a;
+  font-size: 15px;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+  background-color: #fff; }
+
+/* line 42, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 45, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 48, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 53, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 57, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+button, input, textarea {
+  outline: 0; }
+
+/*-------- END : css reset --------*/
+/* line 68, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+.section {
+  background-color: white; }
+  /* line 70, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section .container {
+    margin: 0 auto;
+    text-align: center; }
+
+/* line 75, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+.section1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  box-sizing: border-box;
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto; }
+  /* line 87, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section1 .container header {
+    height: 120px;
+    line-height: 120px;
+    padding: 0 10%; }
+    /* line 91, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section1 .container header .go_left {
+      float: left;
+      padding: 0px 20px; }
+      /* line 94, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section1 .container header .go_left a {
+        display: inline-block; }
+        /* line 96, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section1 .container header .go_left a img {
+          width: 172px;
+          vertical-align: middle; }
+    /* line 102, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section1 .container header .go_right {
+      float: right; }
+      /* line 105, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section1 .container header .go_right ul li {
+        float: left; }
+        /* line 107, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section1 .container header .go_right ul li a {
+          color: #fff;
+          font-size: 15px;
+          opacity: 0.8;
+          transition: all 0.2s ease;
+          -webkit-transition: all 0.2s ease;
+          padding: 20px; }
+        /* line 115, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section1 .container header .go_right ul li a:hover {
+          opacity: 1; }
+      /* line 119, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section1 .container header .go_right ul #burger {
+        position: relative;
+        top: 10px;
+        display: none; }
+    /* line 126, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section1 .container header .m_header {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      text-align: right;
+      background-color: rgba(0, 0, 0, 0.5); }
+      /* line 135, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section1 .container header .m_header nav {
+        padding: 0 10%; }
+  /* line 143, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section1 .container .titlearea {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    /* line 149, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section1 .container .titlearea img {
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      transition: all 0.5s; }
+  /* line 155, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section1 .container a {
+    color: white;
+    text-decoration: none; }
+  /* line 159, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section1 .container .arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    text-align: center; }
+    /* line 164, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section1 .container .arrow img {
+      width: 80%; }
+  /* line 168, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section1 .container .bounce {
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite; }
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+  /* line 208, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section1 .container .backtotop {
+    display: inline;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    background-color: #aaa;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    z-index: 99; }
+    /* line 219, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section1 .container .backtotop img {
+      width: 40px; }
+
+/*--Section 1 META-----------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: 770px) {
+  /* line 228, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section {
+    display: block; } }
+
+@media only screen and (min-width: 480px) and (max-width: 770px) {
+  /* line 241, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section1 .container header .go_right ul li {
+    display: none; }
+  /* line 244, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section1 .container header .go_right ul #burger {
+    display: block; }
+  /* line 258, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section1 .container header .m_header nav {
+    padding: 0 10%; }
+  /* line 267, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section1 .container .titlearea img {
+    width: 70vh; } }
+
+/*--Section 1 META-----------------------------------------*/
+@media only screen and (max-width: 480px) {
+  /* line 281, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section1 .container header .go_right ul li {
+    display: none; }
+  /* line 285, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section1 .container header .go_right ul #burger {
+    display: block; }
+  /* line 292, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section1 .container .titlearea img {
+    width: 50vh; } }
+
+/*-- section 2----------------------------------------------*/
+/* line 300, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+.section2 {
+  background-color: #fff; }
+  /* line 302, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section2 .container {
+    padding: 100px 0 100px 0; }
+    /* line 304, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section2 .container .text_area {
+      padding: 0px 0 40px 0; }
+      /* line 306, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section2 .container .text_area h1 {
+        font-family: "Roboto" sans-serif;
+        font-weight: 800;
+        font-size: 45px;
+        padding: 0px 0px 60px 0; }
+      /* line 312, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section2 .container .text_area p {
+        line-height: 170%;
+        font-size: 13px;
+        padding: 0 0 25px 0; }
+      /* line 317, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section2 .container .text_area .lightgray {
+        font-size: 13px;
+        color: #8e8e8e;
+        padding: 0px; }
+    /* line 324, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section2 .container .chart1 {
+      display: inline-block;
+      position: relative;
+      width: 715px;
+      margin: 0 auto; }
+      /* line 329, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section2 .container .chart1 .flip-container {
+        cursor: pointer;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s;
+        perspective: 1000;
+        -webkit-perspective: 1000;
+        -moz-perspective: 1000;
+        display: inline-block;
+        overflow: hidden;
+        float: left; }
+        /* line 340, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container h1 {
+          font-size: 17px;
+          font-weight: 700; }
+          /* line 343, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container h1 span {
+            font-weight: 400;
+            font-size: 15px; }
+        /* line 349, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container h2 {
+          font-size: 13px;
+          line-height: 23px; }
+        /* line 354, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .front {
+          display: inline-block;
+          border: solid 1px #ffa300;
+          position: absolute;
+          background-color: #ffa300;
+          overflow: hidden;
+          text-align: center;
+          -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+          -webkit-transform-style: preserve-3d;
+          -moz-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+          -webkit-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          transition: all 0.5s; }
+        /* line 371, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .back {
+          overflow: hidden;
+          display: inline-block;
+          border: solid 1px #ffa300;
+          text-align: center;
+          -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+          -webkit-transform-style: preserve-3d;
+          -moz-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+          -webkit-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          transition: all 0.5s;
+          -webkit-transform: rotateY(-180deg);
+          -moz-transform: rotateY(-180deg);
+          transform: rotateY(-180deg); }
+        /* line 390, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card1 {
+          width: 275px;
+          height: 372px;
+          margin-right: 5px; }
+          /* line 395, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card1 .front_number {
+            position: absolute;
+            bottom: 0;
+            left: 0; }
+          /* line 400, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card1 h1 {
+            font-size: 20px; }
+          /* line 404, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card1 h2 {
+            margin-top: 20px; }
+          /* line 407, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card1 .imgback {
+            margin: 5px; }
+        /* line 412, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card2 {
+          width: 237px;
+          height: 157px;
+          margin-right: 5px;
+          overflow: hidden; }
+          /* line 417, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card2 .front_number {
+            position: absolute;
+            bottom: 0;
+            right: 0; }
+          /* line 422, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card2 h1 {
+            margin: 8px 0; }
+        /* line 426, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card3 {
+          width: 97px;
+          height: 157px;
+          margin-right: 5px; }
+          /* line 430, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card3 .front_number {
+            position: absolute;
+            bottom: 0;
+            right: 0; }
+          /* line 435, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card3 h1 {
+            margin-top: 25px; }
+        /* line 439, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card4 {
+          width: 74px;
+          height: 157px; }
+          /* line 442, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card4 .front_number {
+            position: absolute;
+            bottom: 0;
+            right: 0; }
+          /* line 447, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card4 h1 {
+            margin-top: 25px; }
+        /* line 452, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card5 {
+          width: 207px;
+          height: 206px;
+          margin-top: 5px;
+          margin-right: 5px; }
+          /* line 457, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card5 h1 {
+            margin-bottom: 5px; }
+            /* line 458, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+            .section2 .container .chart1 .flip-container .card5 h1 span {
+              font-weight: 400;
+              font-size: 12px;
+              color: #bbb; }
+          /* line 465, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card5 .front_number {
+            position: absolute;
+            bottom: 0;
+            right: 0; }
+          /* line 470, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card5 .imgback {
+            margin-top: 10px;
+            margin-bottom: 10px; }
+        /* line 475, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card6 {
+          width: 207px;
+          height: 206px;
+          margin-top: 5px; }
+          /* line 479, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card6 .front_number {
+            position: absolute;
+            bottom: 0;
+            right: 0; }
+          /* line 484, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card6 h1 {
+            margin-bottom: 10px; }
+          /* line 487, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card6 .imgback {
+            margin-top: 10px;
+            margin-bottom: 10px; }
+      /* line 493, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section2 .container .chart1 .flipped .back {
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        transform: rotateY(0deg); }
+      /* line 498, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section2 .container .chart1 .flipped .front {
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        transform: rotateY(180deg); }
+
+/*-------------section2 MEDIA-----------------------*/
+@media only screen and (min-width: 480px) and (max-width: 770px) {
+  /* line 508, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section2 {
+    position: relative; }
+    /* line 510, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section2 .container {
+      padding: 100px 0 100px 0; }
+      /* line 513, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section2 .container .text_area h1 {
+        font-size: 30px;
+        padding: 0 0 30px 0; }
+      /* line 517, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section2 .container .text_area p {
+        font-size: 11px; }
+      /* line 520, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section2 .container .text_area .lightgray {
+        font-size: 11px; }
+      /* line 524, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section2 .container .chart1 {
+        display: inline-block;
+        position: relative;
+        align-content: center;
+        width: 410px; }
+        /* line 534, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card1 {
+          width: 406px;
+          height: 200px;
+          margin-right: 0px;
+          margin-bottom: 1px; }
+          /* line 539, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card1 .front_number {
+            width: 220px;
+            position: absolute;
+            bottom: 0;
+            left: 205px; }
+          /* line 545, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card1 h1 {
+            padding: 5px;
+            margin-top: 50px;
+            float: right;
+            width: 45%;
+            font-size: 17px;
+            margin-right: 2%; }
+          /* line 553, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card1 h2 {
+            padding: 5px;
+            float: right;
+            width: 45%;
+            font-size: 11px;
+            margin-right: 2%; }
+          /* line 560, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card1 .imgback {
+            width: 45%;
+            float: left; }
+        /* line 565, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card2 {
+          width: 200px;
+          height: 200px;
+          margin-right: 0px; }
+          /* line 569, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card2 .imgback {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0%); }
+          /* line 575, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card2 h1 {
+            margin-top: 25px;
+            font-size: 15px; }
+          /* line 579, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card2 h2 {
+            font-size: 11px; }
+        /* line 583, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card3 {
+          width: 200px;
+          height: 98px;
+          margin-right: 0px;
+          margin-left: 4px; }
+          /* line 588, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card3 .txt {
+            width: 45%;
+            float: left;
+            margin-top: 30px;
+            margin-left: 10px; }
+            /* line 593, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+            .section2 .container .chart1 .flip-container .card3 .txt h1 {
+              margin-top: 0;
+              font-size: 13px; }
+            /* line 597, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+            .section2 .container .chart1 .flip-container .card3 .txt h2 {
+              font-size: 11px; }
+          /* line 601, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card3 .imgback {
+            width: 30%;
+            margin-top: 17px;
+            margin-right: 5px; }
+        /* line 607, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card4 {
+          width: 200px;
+          height: 98px;
+          margin-left: 4px; }
+          /* line 611, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card4 .txt {
+            width: 45%;
+            float: left;
+            margin-top: 30px;
+            margin-left: 10px; }
+            /* line 616, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+            .section2 .container .chart1 .flip-container .card4 .txt h1 {
+              margin-top: 0;
+              font-size: 13px; }
+            /* line 620, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+            .section2 .container .chart1 .flip-container .card4 .txt h2 {
+              font-size: 11px; }
+          /* line 624, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card4 .imgback {
+            width: 35%;
+            margin-top: 15px;
+            margin-right: 5px; }
+        /* line 630, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card5 {
+          width: 200px;
+          height: 200px;
+          margin-top: 0px;
+          margin-right: 0px; }
+          /* line 635, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card5 .imgback {
+            width: 60%; }
+          /* line 638, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card5 h1 {
+            font-size: 15px;
+            line-height: 130%;
+            margin-top: 4px; }
+            /* line 642, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+            .section2 .container .chart1 .flip-container .card5 h1 span {
+              font-size: 13px; }
+          /* line 646, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card5 h2 {
+            font-size: 11px; }
+        /* line 650, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card6 {
+          width: 200px;
+          height: 200px;
+          margin-top: 0px;
+          margin-left: 4px; }
+          /* line 655, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card6 .imgback {
+            width: 60%; }
+          /* line 658, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card6 h1 {
+            margin-top: 4px;
+            font-size: 15px; }
+          /* line 662, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card6 h2 {
+            font-size: 11px; } }
+
+/*-------------section2 MEDIA-----------------------*/
+@media only screen and (max-width: 480px) {
+  /* line 674, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section2 .container {
+    padding: 70px 0; }
+    /* line 677, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section2 .container .text_area h1 {
+      font-size: 23px;
+      padding: 0 0 30px 0; }
+    /* line 681, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section2 .container .text_area p {
+      font-size: 11px; }
+    /* line 684, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section2 .container .text_area .lightgray {
+      font-size: 11px; }
+    /* line 688, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section2 .container .chart1 {
+      position: relative;
+      align-content: center;
+      width: 380px; }
+      /* line 697, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section2 .container .chart1 .flip-container .card1 {
+        width: 380px;
+        height: 170px; }
+        /* line 700, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card1 .front_number {
+          width: 220px;
+          position: absolute;
+          bottom: 0;
+          left: 170px; }
+        /* line 706, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card1 h1 {
+          padding: 5px;
+          margin-top: 35px;
+          float: right;
+          width: 45%;
+          font-size: 17px;
+          margin-right: 2%; }
+        /* line 714, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card1 h2 {
+          padding: 5px;
+          float: right;
+          width: 45%;
+          font-size: 11px;
+          margin-right: 2%; }
+        /* line 721, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card1 .imgback {
+          width: 45%;
+          float: left; }
+      /* line 726, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section2 .container .chart1 .flip-container .card2 {
+        width: 190px;
+        height: 170px;
+        margin-right: 0px; }
+        /* line 730, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card2 .imgback {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, 0%); }
+        /* line 736, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card2 h1 {
+          margin-top: 25px;
+          font-size: 15px; }
+        /* line 740, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card2 h2 {
+          font-size: 11px; }
+      /* line 744, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section2 .container .chart1 .flip-container .card3 {
+        width: 183px;
+        height: 84px;
+        margin-right: 0px;
+        margin-left: 3px; }
+        /* line 749, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card3 .txt {
+          width: 45%;
+          float: left;
+          margin-top: 30px;
+          margin-left: 10px; }
+          /* line 754, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card3 .txt h1 {
+            margin-top: 0;
+            font-size: 13px; }
+          /* line 758, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card3 .txt h2 {
+            font-size: 11px; }
+        /* line 762, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card3 .imgback {
+          width: 30%;
+          margin-top: 17px;
+          margin-right: 5px; }
+      /* line 768, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section2 .container .chart1 .flip-container .card4 {
+        width: 183px;
+        height: 80px;
+        margin-left: 3px; }
+        /* line 772, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card4 .txt {
+          width: 45%;
+          float: left;
+          margin-top: 30px;
+          margin-left: 10px; }
+          /* line 777, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card4 .txt h1 {
+            margin-top: 0;
+            font-size: 13px; }
+          /* line 781, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card4 .txt h2 {
+            font-size: 11px; }
+        /* line 785, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card4 .imgback {
+          width: 35%;
+          margin-top: 15px;
+          margin-right: 5px; }
+      /* line 791, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section2 .container .chart1 .flip-container .card5 {
+        width: 189px;
+        height: 190px;
+        margin-top: 0px;
+        margin-right: 0px; }
+        /* line 796, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card5 .imgback {
+          width: 60%; }
+        /* line 799, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card5 h1 {
+          font-size: 15px;
+          line-height: 130%;
+          margin-top: 4px; }
+          /* line 803, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section2 .container .chart1 .flip-container .card5 h1 span {
+            font-size: 13px; }
+        /* line 807, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card5 h2 {
+          font-size: 11px; }
+      /* line 811, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section2 .container .chart1 .flip-container .card6 {
+        width: 185px;
+        height: 190px;
+        margin-top: 0px;
+        margin-left: 2px; }
+        /* line 816, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card6 .imgback {
+          width: 60%; }
+        /* line 819, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card6 h1 {
+          margin-top: 4px;
+          font-size: 15px; }
+        /* line 823, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section2 .container .chart1 .flip-container .card6 h2 {
+          font-size: 11px; } }
+
+/*------------section3-----------------*/
+/* line 833, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+.section3 {
+  background-color: #f4f4f4;
+  /* modal */ }
+  /* line 835, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section3 .container {
+    padding: 100px 0; }
+    /* line 837, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section3 .container .text_area {
+      padding: 0 0 50px 0; }
+      /* line 839, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section3 .container .text_area h1 {
+        font-family: "Roboto" sans-serif;
+        font-weight: 800;
+        font-size: 45px;
+        padding: 0px 0px 65px 0; }
+      /* line 845, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section3 .container .text_area h2 {
+        font-family: "Roboto" sans-serif;
+        font-weight: 400;
+        font-size: 25px;
+        padding: 0 0 6px 0; }
+      /* line 851, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section3 .container .text_area p {
+        line-height: 170%;
+        font-size: 17px; }
+    /* line 858, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section3 .container .clock h1 {
+      padding-bottom: 100px;
+      display: inline-block;
+      font-weight: 900;
+      font-size: 130px;
+      color: #fff; }
+      /* line 863, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section3 .container .clock h1 span {
+        display: inline-block;
+        width: 140px;
+        height: 175px;
+        line-height: 175px;
+        border-radius: 10px;
+        background-color: #352e29; }
+      /* line 871, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section3 .container .clock h1 .blinking {
+        animation: blinking 1.5s infinite; }
+
+@keyframes blinking {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  50.1% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+      /* line 880, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section3 .container .clock h1 .dot {
+        position: relative;
+        text-align: center;
+        width: 50px;
+        height: 175px;
+        line-height: 175px;
+        background-color: #f4f4f4;
+        color: #352e29; }
+        /* line 888, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section3 .container .clock h1 .dot .dot_center {
+          display: inline-block;
+          position: absolute;
+          top: 30px;
+          left: 8px; }
+    /* line 896, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section3 .container button {
+      background-color: #f4f4f4;
+      border: solid 2px #ffa300;
+      color: #ffa300;
+      width: 200px;
+      height: 50px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 17px;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 999px;
+      letter-spacing: 3px; }
+  /* line 912, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section3 .modal-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    backface-visibility: hidden;
+    transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1); }
+    /* line 928, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section3 .modal-overlay.active {
+      opacity: 1;
+      visibility: visible; }
+    /* line 933, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section3 .modal-overlay .modal {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background-color: #fff;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      overflow-y: auto;
+      visibility: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      backface-visibility: hidden;
+      transform: scale(1.2);
+      transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1); }
+      /* line 949, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section3 .modal-overlay .modal button {
+        background-color: #fff;
+        border: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 0;
+        cursor: pointer;
+        position: absolute;
+        top: 10px; }
+      /* line 960, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section3 .modal-overlay .modal .close-modal {
+        opacity: 0;
+        backface-visibility: hidden;
+        transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+        transition-delay: 0.3s; }
+      /* line 969, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section3 .modal-overlay .modal .modal-content {
+        opacity: 0;
+        backface-visibility: hidden;
+        transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+        transition-delay: 0.3s;
+        background-color: #fff;
+        width: 100%; }
+        /* line 977, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section3 .modal-overlay .modal .modal-content .clock_area {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          align-items: center; }
+          /* line 982, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section3 .modal-overlay .modal .modal-content .clock_area .clock_common {
+            width: 50%;
+            padding: 50px;
+            font-family: "Roboto" sans-serif; }
+            /* line 986, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+            .section3 .modal-overlay .modal .modal-content .clock_area .clock_common img {
+              width: 180px; }
+            /* line 989, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+            .section3 .modal-overlay .modal .modal-content .clock_area .clock_common h1 {
+              font-size: 25px;
+              font-weight: 700;
+              margin-top: 20px;
+              margin-bottom: 7px; }
+            /* line 995, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+            .section3 .modal-overlay .modal .modal-content .clock_area .clock_common h2 {
+              font-size: 25px;
+              font-weight: 700;
+              margin-bottom: 20px; }
+            /* line 1000, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+            .section3 .modal-overlay .modal .modal-content .clock_area .clock_common h3 {
+              font-size: 35px;
+              margin-bottom: 30px; }
+            /* line 1004, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+            .section3 .modal-overlay .modal .modal-content .clock_area .clock_common h4 {
+              font-size: 30px;
+              margin-top: 5px;
+              margin-bottom: -10px; }
+            /* line 1009, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+            .section3 .modal-overlay .modal .modal-content .clock_area .clock_common p {
+              font-size: 13px;
+              line-height: 170%; }
+      /* line 1026, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section3 .modal-overlay .modal.active {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1); }
+        /* line 1031, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section3 .modal-overlay .modal.active .modal-content {
+          opacity: 1; }
+        /* line 1035, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section3 .modal-overlay .modal.active .close-modal {
+          transform: translateY(10px);
+          opacity: 1; }
+
+/*------------section3----MEDIA--------------*/
+@media only screen and (max-width: 770px) {
+  /* line 1047, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section3 .container .text_area {
+    padding: 0px 0 20px 0; }
+    /* line 1049, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section3 .container .text_area h1 {
+      font-size: 30px;
+      padding: 0px 0px 35px 0; }
+    /* line 1054, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section3 .container .text_area h2 {
+      font-size: 17px; }
+    /* line 1057, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section3 .container .text_area p {
+      font-size: 15px; }
+  /* line 1062, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section3 .container .clock h1 {
+    display: inline-block;
+    font-size: 70px;
+    padding: 20px 0 70px 0; }
+    /* line 1066, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section3 .container .clock h1 span {
+      width: 70px;
+      height: 90px;
+      line-height: 90px;
+      border-radius: 7px; }
+    /* line 1072, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section3 .container .clock h1 .blinking {
+      animation: blinking 1.5s infinite; }
+  @keyframes blinking {
+    0% {
+      opacity: 0; }
+    50% {
+      opacity: 0; }
+    50.1% {
+      opacity: 1; }
+    100% {
+      opacity: 1; } }
+    /* line 1081, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section3 .container .clock h1 .dot {
+      position: relative;
+      text-align: center;
+      width: 30px;
+      height: 70px;
+      line-height: 20px;
+      background-color: #f4f4f4;
+      color: #352e29; }
+      /* line 1089, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section3 .container .clock h1 .dot .dot_center {
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        left: 8px; }
+  /* line 1096, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section3 .container button {
+    width: 180px;
+    height: 45px;
+    font-size: 14px;
+    border: 1px solid #ffa300; } }
+
+/*------------section4-----------------*/
+/* line 1107, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+.section4 {
+  background-color: #303030; }
+  /* line 1109, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section4 .container {
+    padding: 100px 0;
+    color: #fff;
+    margin: 0 auto; }
+    /* line 1113, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section4 .container .text_area {
+      padding: 0 0 60px 0; }
+      /* line 1115, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section4 .container .text_area h1 {
+        color: #ffa300;
+        font-family: "Roboto" sans-serif;
+        font-weight: 800;
+        font-size: 45px;
+        padding: 0px 0px 60px 0; }
+      /* line 1122, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section4 .container .text_area h2 {
+        color: #fff;
+        font-family: "Roboto" sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        padding: 0 0 6px 0; }
+      /* line 1129, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section4 .container .text_area p {
+        color: #fff;
+        line-height: 170%;
+        font-size: 13px;
+        padding: 0 0 25px 0; }
+      /* line 1135, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section4 .container .text_area .lightgray {
+        font-size: 13px;
+        color: #8e8e8e;
+        padding: 0px; }
+    /* line 1141, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section4 .container .list {
+      display: inline-block; }
+      /* line 1143, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section4 .container .list .pg4 {
+        width: 250px;
+        float: left; }
+        /* line 1146, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section4 .container .list .pg4 .circle {
+          display: inline-block;
+          position: relative; }
+          /* line 1149, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section4 .container .list .pg4 .circle .circle_on {
+            width: 200px;
+            height: 200px;
+            border: none;
+            text-align: center; }
+          /* line 1155, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section4 .container .list .pg4 .circle .circle_off {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            background-color: none;
+            border: none;
+            text-align: center; }
+        /* line 1168, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section4 .container .list .pg4 .circle:hover .circle_on {
+          opacity: 0; }
+        /* line 1171, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section4 .container .list .pg4 .circle:hover .circle_off {
+          display: block; }
+      /* line 1176, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section4 .container .list h5 {
+        font-size: 25px;
+        margin: 20px 0; }
+      /* line 1180, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section4 .container .list h6 {
+        font-size: 13px;
+        line-height: 170%;
+        font-weight: 200;
+        color: #ddd; }
+    /* line 1187, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section4 .container .list:hover .pg4:not(:hover) {
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
+      opacity: .3; }
+
+/*------------section4---MEDIA--------------*/
+@media only screen and (min-width: 700px) and (max-width: 850px) {
+  /* line 1198, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section4 .container .text_area {
+    padding: 0px 0 50px 0; }
+    /* line 1200, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section4 .container .text_area h1 {
+      font-size: 30px;
+      padding: 0 0 35px 0; }
+    /* line 1204, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section4 .container .text_area h2 {
+      font-size: 17px;
+      font-weight: 200; }
+    /* line 1208, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section4 .container .text_area p {
+      font-size: 15px;
+      padding: 0 0 20px 0; }
+  /* line 1213, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section4 .container .list {
+    width: 90%;
+    margin-bottom: 50px; }
+    /* line 1216, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section4 .container .list .pg4 {
+      width: 50%;
+      display: block;
+      margin-bottom: 20px; }
+      /* line 1220, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section4 .container .list .pg4 .circle {
+        text-align: left;
+        display: inline-block;
+        position: relative; }
+        /* line 1224, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section4 .container .list .pg4 .circle .circle_on {
+          width: 130px;
+          height: 130px; }
+          /* line 1227, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+          .section4 .container .list .pg4 .circle .circle_on img {
+            width: 130px; }
+        /* line 1231, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section4 .container .list .pg4 .circle .circle_off {
+          display: none;
+          width: 130px;
+          height: 130px; }
+      /* line 1238, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section4 .container .list .pg4 .circle:hover .circle_on {
+        opacity: 100; }
+      /* line 1241, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section4 .container .list .pg4 .circle:hover .circle_off {
+        display: none; }
+      /* line 1245, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section4 .container .list .pg4 .txt {
+        margin: 35px 0 0 0;
+        float: right;
+        width: 170px; }
+        /* line 1249, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section4 .container .list .pg4 .txt h5 {
+          font-size: 16px;
+          margin: 0 0 8px 0; }
+        /* line 1253, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section4 .container .list .pg4 .txt h6 {
+          font-size: 10px; } }
+
+@media only screen and (max-width: 700px) {
+  /* line 1266, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section4 .container .list .pg4 {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px; }
+    /* line 1270, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section4 .container .list .pg4 .circle {
+      text-align: left;
+      display: inline-block;
+      position: relative; }
+      /* line 1274, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section4 .container .list .pg4 .circle .circle_on {
+        width: 130px;
+        height: 130px; }
+        /* line 1277, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section4 .container .list .pg4 .circle .circle_on img {
+          width: 130px; }
+      /* line 1281, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section4 .container .list .pg4 .circle .circle_off {
+        display: none;
+        width: 130px;
+        height: 130px; }
+    /* line 1288, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section4 .container .list .pg4 .circle:hover .circle_on {
+      opacity: 100; }
+    /* line 1291, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section4 .container .list .pg4 .circle:hover .circle_off {
+      display: none; }
+    /* line 1295, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section4 .container .list .pg4 .txt {
+      margin: 10px 0; }
+      /* line 1297, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section4 .container .list .pg4 .txt h5 {
+        font-size: 16px;
+        margin: 0 0 8px 0; }
+      /* line 1301, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section4 .container .list .pg4 .txt h6 {
+        font-size: 10px; } }
+
+/*------------section5-----------------*/
+/* line 1316, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+.section5 {
+  height: 800px;
+  background-image: url(../img/bg2.jpg);
+  background-position: center;
+  background-size: cover; }
+  /* line 1321, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section5 .container {
+    position: relative; }
+    /* line 1323, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section5 .container h1 {
+      height: 800px;
+      line-height: 800px;
+      top: 300px;
+      font-family: 'Permanent Marker', cursive;
+      font-size: 40px; }
+    /* line 1330, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section5 .container .bubble {
+      display: inline-block;
+      background-color: #fff;
+      opacity: 0.4;
+      border-radius: 999px; }
+      /* line 1335, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section5 .container .bubble h2 {
+        font-weight: 600;
+        font-size: 15px; }
+        /* line 1338, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section5 .container .bubble h2 span {
+          font-weight: 400;
+          font-size: 12px;
+          color: #8e8e8e;
+          padding: 10px 0;
+          display: block; }
+    /* line 1347, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section5 .container .bubble:hover {
+      opacity: 0.8;
+      -webkit-transition: opacity .20s ease-in-out;
+      -moz-transition: opacity .20s ease-in-out;
+      -ms-transition: opacity .20s ease-in-out;
+      -o-transition: opacity .20s ease-in-out;
+      transition: opacity .20s ease-in-out; }
+    /* line 1356, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section5 .container .bubble1 {
+      position: absolute;
+      top: 147px;
+      left: 170px;
+      width: 160px;
+      height: 160px;
+      line-height: 190px;
+      animation: float 3s ease-out infinite; }
+      /* line 1361, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section5 .container .bubble1 h2 {
+        padding: 50px 0px;
+        line-height: normal; }
+
+@keyframes float {
+  50% {
+    transform: translate(0, 5px); } }
+    /* line 1375, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section5 .container .bubble2 {
+      position: absolute;
+      top: 70px;
+      left: 900px;
+      width: 180px;
+      height: 180px;
+      line-height: 215px;
+      animation: float 4s ease-out infinite; }
+      /* line 1380, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section5 .container .bubble2 h2 {
+        line-height: normal;
+        padding: 55px 0px; }
+
+@keyframes float {
+  50% {
+    transform: translate(0, 7px); } }
+    /* line 1394, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section5 .container .bubble3 {
+      position: absolute;
+      top: 484px;
+      left: 10px;
+      width: 250px;
+      height: 250px;
+      line-height: 250px;
+      animation: float 5s ease-out infinite; }
+      /* line 1399, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section5 .container .bubble3 h2 {
+        line-height: normal;
+        padding: 60px 0px; }
+
+@keyframes float {
+  50% {
+    transform: translate(0, 5px); } }
+    /* line 1413, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section5 .container .bubble4 {
+      position: absolute;
+      top: 470px;
+      left: 680px;
+      width: 130px;
+      height: 130px;
+      line-height: 150px;
+      animation: float 3s ease-out infinite; }
+      /* line 1418, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section5 .container .bubble4 h2 {
+        line-height: normal;
+        padding: 35px 0px; }
+
+@keyframes float {
+  50% {
+    transform: translate(2px, 5px); } }
+    /* line 1432, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section5 .container .bubble5 {
+      position: absolute;
+      top: 496px;
+      left: 950px;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      animation: float 3s ease-out infinite; }
+      /* line 1437, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section5 .container .bubble5 h2 {
+        line-height: normal;
+        padding: 50px 0px; }
+
+@keyframes float {
+  50% {
+    transform: translate(2px, 5px); } }
+
+/*------------section5-----MEDIA------------*/
+@media only screen and (max-width: 770px) {
+  /* line 1455, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  .section5 {
+    height: 720px;
+    width: 100%; }
+    /* line 1458, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    .section5 .container {
+      position: relative;
+      text-align: center; }
+      /* line 1461, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section5 .container h1 {
+        line-height: 120px;
+        font-size: 40px; }
+      /* line 1465, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section5 .container .bubble {
+        background-color: transparent;
+        opacity: 0.6;
+        display: block;
+        border-radius: 0px;
+        width: 100%; }
+      /* line 1472, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section5 .container .bubble1 {
+        height: 80px;
+        display: block;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        animation: none; }
+        /* line 1479, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section5 .container .bubble1 h2 {
+          padding: 0px 0px; }
+      /* line 1483, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section5 .container .bubble2 {
+        height: 80px;
+        display: block;
+        position: absolute;
+        top: 210px;
+        left: 0;
+        animation: none; }
+        /* line 1490, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section5 .container .bubble2 h2 {
+          padding: 0px 0px; }
+      /* line 1494, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section5 .container .bubble3 {
+        height: 130px;
+        display: block;
+        position: absolute;
+        top: 320px;
+        left: 0;
+        animation: none; }
+        /* line 1501, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section5 .container .bubble3 h2 {
+          padding: 0px 0px; }
+      /* line 1505, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section5 .container .bubble4 {
+        height: 70px;
+        display: block;
+        position: absolute;
+        top: 460px;
+        left: 0;
+        animation: none; }
+        /* line 1512, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section5 .container .bubble4 h2 {
+          padding: 0px 0px; }
+      /* line 1516, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      .section5 .container .bubble5 {
+        height: 130px;
+        display: block;
+        position: absolute;
+        top: 550px;
+        left: 0;
+        animation: none; }
+        /* line 1523, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+        .section5 .container .bubble5 h2 {
+          padding: 0px 0px; } }
+
+/* line 1530, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+footer {
+  background-color: #e5e5e5;
+  text-align: center;
+  color: #aaa;
+  margin: 0;
+  padding: 50px 0 30px 0; }
+  /* line 1536, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  footer img {
+    width: 30px;
+    margin-bottom: 20px; }
+  /* line 1540, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  footer a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #aaa; }
+  /* line 1545, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  footer p {
+    opacity: 0.7;
+    font-size: 11px;
+    line-height: 14px;
+    margin: 15px 0 8px 0; }
+  /* line 1551, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  footer .sns {
+    opacity: 0.7;
+    margin: 20px 0; }
+    /* line 1554, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+    footer .sns a {
+      margin: 0 10px; }
+      /* line 1556, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      footer .sns a .fa {
+        font-size: 20px;
+        color: #aaa;
+        transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease; }
+      /* line 1562, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+      footer .sns a .fa:hover {
+        color: #ffa300; }
+
+@media only screen and (max-width: 770px) {
+  /* line 1570, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  footer p {
+    font-size: 9px; }
+  /* line 1575, /Users/berrychoi/Desktop/publishing_morning/css/style.scss */
+  footer .sns a .fa {
+    font-size: 18px; } }
+
+/*# sourceMappingURL=style.css.map */
